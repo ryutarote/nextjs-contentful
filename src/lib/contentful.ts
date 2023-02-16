@@ -38,12 +38,29 @@ export interface IProperty extends Entry<PropertyFields> {
 			};
 		};
 	};
+	fields: PropertyFields;
+	slug: string;
+	propertyTitle: string;
+	description: Document;
+	thumbnails: {
+		fields: {
+			file: {
+				url: string;
+			};
+			title: string;
+		};
+		sys: {
+			id: string;
+		};
+	};
+	price: number;
+	detailedImages: Entry<{ fields: { file: { url: string }; title: string } }>[];
 }
 
 export const buildClient = () => {
 	const client = createClient({
-		space: process.env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID || '', //'tg8xsqi2at45',
-		accessToken: process.env.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN || '', //'CJlcBcf1zx4wrvxcSXYXOjgJf_um-9wedVlfiSCMNro',
+		space: process.env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID || '',
+		accessToken: process.env.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN || '',
 		environment: 'master',
 	});
 	return client;

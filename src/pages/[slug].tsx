@@ -4,7 +4,7 @@ import Head from 'next/head';
 import { useRouter } from 'next/router';
 import ErrorPage from 'next/error';
 import styles from '../styles/Home.module.css';
-import { buildClient, PropertyFields } from '../lib/contentful';
+import { buildClient, PropertyFields, IProperty } from '../lib/contentful';
 import { EntryCollection } from 'contentful';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 
