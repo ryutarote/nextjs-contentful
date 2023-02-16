@@ -1,0 +1,34 @@
+[
+  {
+    "ts": "2023-02-15T17:47:45.113Z",
+    "level": "error",
+    "error": {
+      "originalError": {
+        "name": "NotFound",
+        "message": "{\n  \"status\": 404,\n  \"statusText\": \"Not Found\",\n  \"message\": \"The resource could not be found.\",\n  \"details\": {\n    \"type\": \"Space\",\n    \"id\": \"g8xsqi2at45\"\n  },\n  \"request\": {\n    \"url\": \"/spaces/g8xsqi2at45\",\n    \"headers\": {\n      \"Accept\": \"application/json, text/plain, */*\",\n      \"Content-Type\": \"application/vnd.contentful.management.v1+json\",\n      \"X-Contentful-User-Agent\": \"app contentful.import/8.5.30; feature library-import; sdk contentful-management.js/0.0.0-determined-by-semantic-release; platform node.js/v18.9.0; os macOS/v18.9.0;\",\n      \"CF-Sequence\": \"ef076235-4280-4a83-a41d-14697b254721\",\n      \"Authorization\": \"Bearer ...OyziE\",\n      \"User-Agent\": \"axios/0.27.2\"\n    },\n    \"method\": \"get\"\n  },\n  \"requestId\": \"920fa426-e167-4fd2-ab77-53f4adbaf348\"\n}"
+      },
+      "data": {
+        "status": 404,
+        "statusText": "Not Found",
+        "message": "The resource could not be found.",
+        "details": {
+          "type": "Space",
+          "id": "g8xsqi2at45"
+        },
+        "request": {
+          "url": "/spaces/g8xsqi2at45",
+          "headers": {
+            "Accept": "application/json, text/plain, */*",
+            "Content-Type": "application/vnd.contentful.management.v1+json",
+            "X-Contentful-User-Agent": "app contentful.import/8.5.30; feature library-import; sdk contentful-management.js/0.0.0-determined-by-semantic-release; platform node.js/v18.9.0; os macOS/v18.9.0;",
+            "CF-Sequence": "ef076235-4280-4a83-a41d-14697b254721",
+            "Authorization": "Bearer ...OyziE",
+            "User-Agent": "axios/0.27.2"
+          },
+          "method": "get"
+        },
+        "requestId": "920fa426-e167-4fd2-ab77-53f4adbaf348"
+      }
+    }
+  }
+]
